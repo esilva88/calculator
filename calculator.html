@@ -1,50 +1,78 @@
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+  </head>
 
-</head>
-
-<body onload="init()" ;>
+  <body>
     <table class="calculadora">
-        <tr>
-            <td colspan="4"><span id="resultado">0</span></td>
-        </tr>
+      <tr>
+        <td colspan="4"><span id="resultado">0</span></td>
+      </tr>
 
-        <tr>
-            <td><button id="siete" onclick="number('7')"> 7 </button></td>
-            <td><button id="ocho" onclick="number('8')"> 8 </button></td>
-            <td><button value="9" id="nueve" onclick="number('9')"> 9 </button></td>
-            <td><button value="/" id="division" onclick="operation('/')"> / </button></td>
-        </tr>
+      <tr>
+        <td><button class="number-button" value="7" id="siete">7</button></td>
+        <td><button class="number-button" value="8" id="ocho">8</button></td>
+        <td><button class="number-button" value="9" id="nueve">9</button></td>
+        <td>
+          <button
+            class="operation-button"
+            value="/"
+            id="division"
+          >
+            /
+          </button>
+        </td>
+      </tr>
 
-        <tr>
-            <td><button value="4" id="cuatro" onclick="number('4')"> 4 </button></td>
-            <td><button value=" 5" id="cinco" onclick="number('5')"> 5 </button></td>
-            <td><button value="6" id="seis" onclick="number('6')"> 6 </button></td>
-            <td><button value="*" id="multiplicacion" onclick="operation('*')"> * </button></td>
-        </tr>
+      <tr>
+        <td><button class="number-button" value="4" id="cuatro">4</button></td>
+        <td><button class="number-button" value="5" id="cinco">5</button></td>
+        <td><button class="number-button" value="6" id="seis">6</button></td>
+        <td>
+          <button
+            class="operation-button"
+            value="*"
+            id="multiplicacion"
+          >
+            *
+          </button>
+        </td>
+      </tr>
 
-        <tr>
-            <td><button value="1" id="uno" onclick="number('1')"> 1 </button></td>
-            <td><button value="2" id="dos" onclick="number('2')"> 2 </button></td>
-            <td><button value="3" id="tres" onclick="number('3')"> 3 </button></td>
-            <td><button value="-" id="resta" onclick="operation('-')"> - </button></td>
-        </tr>
+      <tr>
+        <td><button class="number-button" value="1" id="uno">1</button></td>
+        <td><button class="number-button" value="2" id="dos">2</button></td>
+        <td><button class="number-button" value="3" id="tres">3</button></td>
+        <td>
+          <button
+            class="operation-button"
+            value="-"
+            id="resta"
+          >
+            -
+          </button>
+        </td>
+      </tr>
 
-
-        <tr>
-            <td><button id="reset" onclick=""> C </button></td>
-            <td><button value="0" id="cero" onclick="number('0')"> 0 </button></td>
-            <td><button id="igual" onclick="igualdad()"> = </button></td>
-            <td><button value="+" id="suma" onclick="operation('+')"> + </button></td>
-        </tr>
+      <tr>
+        <td><button id="clear-button">C</button></td>
+        <td><button class="number-button" value="0" id="cero">0</button></td>
+        <td><button class="equal-button" id="igual">=</button></td>
+        <td>
+          <button
+            class="operation-button"
+            value="+"
+            id="suma"
+          >
+            +
+          </button>
+        </td>
+      </tr>
     </table>
 
     <script src="calculator.js"></script>
-</body>
-
+  </body>
 </html>
